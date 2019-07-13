@@ -37,8 +37,17 @@ def map_to_double(array)
   double_array
 end
 
+# square each element in an array
 def map_to_square(array)
+  square_array = []
+  counter = 0
 
+  while counter < array.length do
+    square_array.push(array[counter] ** 2)
+    counter += 1
+  end
+
+  square_array
 end
 
 def reduce_to_total(array)
