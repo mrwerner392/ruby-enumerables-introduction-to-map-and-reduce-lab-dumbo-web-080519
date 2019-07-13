@@ -70,6 +70,7 @@ def reduce_to_all_true(array)
     if !array[counter]
       return false
     end
+    counter += 1
   end
 
   true
