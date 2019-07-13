@@ -11,8 +11,17 @@ def map_to_negativize(array)
   neg_array
 end
 
+# keep array elements unchanged
 def map_to_no_change(array)
+  no_change_array = []
+  counter = 0
 
+  while counter < array.length do
+    no_change_array.push(array[counter])
+    counter += 1
+  end
+
+  no_change_array
 end
 
 def map_to_double(array)
