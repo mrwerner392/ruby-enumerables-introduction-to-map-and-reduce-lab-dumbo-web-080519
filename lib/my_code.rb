@@ -50,7 +50,7 @@ def map_to_square(array)
   square_array
 end
 
-# returns sum of elements in an array
+# adds each element to a running total
 def reduce_to_total(array, running_total = 0)
   counter = 0
 
@@ -62,8 +62,17 @@ def reduce_to_total(array, running_total = 0)
   running_total
 end
 
+# checks if each element is truthy
 def reduce_to_all_true(array)
+  counter = 0
 
+  while counter < array.length do
+    if !array[counter]
+      return false
+    end
+  end
+
+  true
 end
 
 def reduce_to_any_true(array)
