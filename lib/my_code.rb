@@ -62,7 +62,7 @@ def reduce_to_total(array, running_total = 0)
   running_total
 end
 
-# checks if each element is truthy
+# checks if every element in an array is truthy
 def reduce_to_all_true(array)
   counter = 0
 
@@ -76,6 +76,16 @@ def reduce_to_all_true(array)
   true
 end
 
+# check if any element in an array is truthy
 def reduce_to_any_true(array)
+  counter = 0
 
+  while counter < array.length do
+    if array[counter]
+      return true
+    end
+    counter += 1
+  end
+
+  false
 end
