@@ -51,16 +51,15 @@ def map_to_square(array)
 end
 
 # returns sum of elements in an array
-def reduce_to_total(array)
-  total = 0
+def reduce_to_total(array, running_total = 0)
   counter = 0
 
   while counter < array.length do
-    total += array[counter]
+    running_total += array[counter]
     counter += 1
   end
 
-  total
+  running_total
 end
 
 def reduce_to_all_true(array)
