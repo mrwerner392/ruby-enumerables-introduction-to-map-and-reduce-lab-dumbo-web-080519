@@ -50,8 +50,17 @@ def map_to_square(array)
   square_array
 end
 
+# returns sum of elements in an array
 def reduce_to_total(array)
+  total = 0
+  counter = 0
 
+  while counter < array.length do
+    total += array[counter]
+    counter += 1
+  end
+
+  total
 end
 
 def reduce_to_all_true(array)
