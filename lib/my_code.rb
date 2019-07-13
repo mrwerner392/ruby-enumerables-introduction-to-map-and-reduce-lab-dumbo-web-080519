@@ -24,8 +24,17 @@ def map_to_no_change(array)
   no_change_array
 end
 
+# double each element in an array
 def map_to_double(array)
+  double_array = []
+  counter = 0
 
+  while counter < array.length do
+    double_array.push(array[counter] * 2)
+    counter += 1
+  end
+
+  double_array
 end
 
 def map_to_square(array)
